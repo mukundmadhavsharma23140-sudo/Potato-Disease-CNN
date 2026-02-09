@@ -1,0 +1,5 @@
+tensorFlow==2.13.0
+numpy
+opencv-python
+matplotlib
+scikit-learn

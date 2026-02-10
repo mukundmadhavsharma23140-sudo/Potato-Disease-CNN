@@ -83,13 +83,17 @@ Potato_Disease_CNN/
    pip install -r requirements.txt
 
 2 Train the model:
+```bash
    python train_cnn.py
-
+```
 3 Evaluate on test set:
+```bash
   python evaluate_model.py
-
+```
 4 Run full pipeline:
+```bash
   python final_pipeline.py
+
 
 
 

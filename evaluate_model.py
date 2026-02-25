@@ -8,7 +8,7 @@ import seaborn as sns
 IMG_SIZE = (224, 224)
 BATCH_SIZE = 32
 
-model = load_model("potato_disease_cnn.h5")
+model = load_model("potato_disease_cnn_v2.h5")
 
 test_datagen = ImageDataGenerator(rescale=1./255)
 

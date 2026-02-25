@@ -41,4 +41,4 @@ for cls in classes:
             dst = os.path.join(split_dir, file)
             shutil.copy(src, dst)
 
-print("✅ Dataset successfully split into train / val / test.")
+print("Dataset successfully split into train / val / test.")

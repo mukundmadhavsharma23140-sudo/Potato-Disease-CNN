@@ -7,9 +7,9 @@ from severity_estimation import estimate_severity
 from cure_recommendation import recommend_cure
 
 # Load trained CNN model
-model = load_model("potato_disease_cnn.h5")
+model = load_model("potato_disease_cnn_v2.h5")
 
-# Class labels (IMPORTANT: must match training order)
+# Class labels 
 class_labels = [
     "Potato___Early_blight",
     "Potato___Late_blight",

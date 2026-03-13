@@ -3,8 +3,8 @@ import shutil
 import random
 
 # Paths
-SOURCE_DIR = "dataset"
-TARGET_DIR = "dataset_processed"
+SOURCE_DIR = "PlantVillage"
+TARGET_DIR = "PlantVillage_processed"
 
 TRAIN_RATIO = 0.7
 VAL_RATIO = 0.15

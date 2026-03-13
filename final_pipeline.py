@@ -7,7 +7,7 @@ from severity_estimation import estimate_severity
 from cure_recommendation import recommend_cure
 
 # Load trained CNN model
-model = load_model("potato_disease_cnn_v2.h5")
+model = load_model("potato_disease_cnn_newmodel_plantVillage.h5")
 
 # Class labels 
 class_labels = [
@@ -42,5 +42,5 @@ def predict_pipeline(image_path):
         print("Leaf is healthy. No treatment required.")
 
 if __name__ == "__main__":
-    test_image = "dataset_processed/test/Potato___Early_blight/0c4f6f72-c7a2-42e1-9671-41ab3bf37fe7___RS_Early.B 6752.jpg"
+    test_image = "PlantVillage_processed/test/Potato___Early_blight/test0.JPG"
     predict_pipeline(test_image)

@@ -3,7 +3,7 @@ import pickle
 
 # Load training history saved manually
 # If you didn't save it, we'll fix that in the next step
-with open("history.pkl", "rb") as f:
+with open("history_newmodel_plantVillage.pkl", "rb") as f:
     history = pickle.load(f)
 
 # Accuracy plot
@@ -14,7 +14,7 @@ plt.xlabel("Epoch")
 plt.ylabel("Accuracy")
 plt.legend()
 plt.title("Training vs Validation Accuracy")
-plt.savefig("accuracy_curve.png")
+plt.savefig("accuracy_curve_newmodel_plantVillage.png")
 plt.show()
 
 # Loss plot
@@ -25,5 +25,5 @@ plt.xlabel("Epoch")
 plt.ylabel("Loss")
 plt.legend()
 plt.title("Training vs Validation Loss")
-plt.savefig("loss_curve.png")
+plt.savefig("loss_curve_newmodel_plantVillage.png")
 plt.show()

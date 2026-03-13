@@ -13,7 +13,7 @@ model = load_model("potato_disease_cnn_v2.h5")
 test_datagen = ImageDataGenerator(rescale=1./255)
 
 test_gen = test_datagen.flow_from_directory(
-    "dataset_processed/test",
+    "PlantVillage_processed/test",
     target_size=IMG_SIZE,
     batch_size=BATCH_SIZE,
     class_mode="categorical",
@@ -37,6 +37,6 @@ sns.heatmap(cm, annot=True, fmt="d", cmap="Blues",
             yticklabels=class_names)
 plt.xlabel("Predicted")
 plt.ylabel("Actual")
-plt.title("Confusion Matrix")
-plt.savefig("confusion_matrix.png")
+plt.title("Confusion Matrix_NewModel_PlantVillage")
+plt.savefig("confusion_matrix_newmodel_plantVillage.png")
 plt.show()
